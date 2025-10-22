@@ -1,16 +1,14 @@
+
+body {
+  background-color: #282c34;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -24,15 +22,55 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+textarea {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 90%;
+  max-width: 500px;
+  font-family: Arial, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  background-color: #61dafb; /* React ka color */
+  color: #282c34;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
+
+button:hover {
+  background-color: #ffffff;
+}
+
+button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+.result-box {
+  margin-top: 30px;
+  padding: 20px;
+  border: 2px solid #61dafb;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Yeh classes result ko color dengi */
+.positive {
+  color: #4caf50; /* Green */
+  font-weight: bold;
+}
+
+.negative {
+  color: #f44336; /* Red */
+  font-weight: bold;
+}
+
