@@ -3,7 +3,7 @@ import './App.css'; // Styling ke liye CSS file import ki
 
 // ------------------------------------------------------------------
 // LOCAL TESTING URL
-const API_URL = "http://127.0.0.1:5000/predict";
+const API_URL = "https://sentiment-api-backend.onrender.com/predict";
 // ------------------------------------------------------------------
 
 function App() {
